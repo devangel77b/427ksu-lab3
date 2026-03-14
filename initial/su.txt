@@ -1,0 +1,7 @@
+1. This is a review of the manuscript "Energy is conserved in spring-like poppers" by Bawar, Khabinskiy, Nagrani, and Su. I recommend major revisions.
+
+2. The attached markup provides most of the text revisions that would be needed. In general the authors should revise their work to be consistent with their most recent published example on testing kinematics during freefall; there are places in the energy manuscript that use informal or ambiguous wording, present irrelevant details about group members doing x y z, give recipe steps like for a procedure; insufficiently cite sources; or use statistics variable notations when the key topic here is the physics.
+
+3. Figures should be formatted to fit 1 column or 2 columns of a standard article and not done as floating text on a Google Doc (the authors should consider tossing Google docs and sheets entirely!)
+
+4. Figure 3 does not show the actual data points for the F vs x measurement, and there is no bar graph nor mean +/- sd summary of the energy terms. These are necessary for the work to be publishable!
