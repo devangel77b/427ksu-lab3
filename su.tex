@@ -27,7 +27,7 @@
 % set PDF metadata
 % AUTHORS EDIT THIS PART
 \hypersetup{%
-pdftitle={Energy is Conserved in Spring-like Poppers}, % full title here
+pdftitle={Energy is conserved in spring-like poppers}, % full title here
 pdfauthor={Kelly Su, Julia Bawar, Julia Khabinskiy, and Sejal Nagrani}, % full author list here
 }
 
@@ -36,9 +36,9 @@ pdfauthor={Kelly Su, Julia Bawar, Julia Khabinskiy, and Sejal Nagrani}, % full a
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[RE,RO]{J S\&E \textbf{2}, xx--xx (2026)} % FOR EDITOR ONLY
-\fancyhead[LO]{Lennon \emph{et al}} % if many authors
+\fancyhead[LO]{Su \emph{et al}} % if many authors
 %\fancyhead[LO]{John and Dee} % if short enough to list all authors
-\fancyhead[LE]{She loves you, yeah, yeah, yeah} % full or short title depending on what fits
+\fancyhead[LE]{Energy is conserved in spring-like poppers} % full or short title depending on what fits
 %\fancyhead[LE}{Several species of small furry animals gathered together in a cave and grooving with a pict} % might be too long
 %\fancyhead[LE]{Several species grooving} % might be a short version of the title that fits
 \fancyfoot[C]{\thepage}
@@ -54,7 +54,7 @@ pdfauthor={Kelly Su, Julia Bawar, Julia Khabinskiy, and Sejal Nagrani}, % full a
 %\linenumbers % FOR EDITOR USE ONLY
 
 % AUTHORS EDIT THIS PART
-\title{Energy is Conserved in Spring-like Poppers}
+\title{Energy is conserved in spring-like poppers}
 \author{Kelly Su}
 \altaffiliation{Manalapan High School} % use for non S&E authors
 \author{Julia Bawar}
@@ -68,7 +68,7 @@ pdfauthor={Kelly Su, Julia Bawar, Julia Khabinskiy, and Sejal Nagrani}, % full a
 
 % AUTHORS PUT YOUR MANUSCRIPT IN BELOW HERE
 \begin{abstract}
-This experiment investigates energy conservation in spring-like popper toys. A popper was compressed and released to obtain its maximum height, its velocity right after hitting the maximum height, and its velocity upon release for five trials. The kinetic energy equation and the potential energy equation were evaluated with the obtained values, where the average of the yielded kinetic energy and potential energy values, 0.06894 J and 0.07922 J, respectively, were compared and found to be approximately equal. The elastic potential energy stored in the popper before launch was 0.257 J, further supporting the idea that energy is conserved. A paired t-test comparing the average kinetic energy at launch and the average gravitational potential energy at maximum height for a popper for five trials yielded a p-value of p = 0.424 > α = 0.05, revealing no statistically significant difference between the kinetic energy at launch and the potential energy at the popper’s highest point. This means that the kinetic energy at launch and the potential energy at maximum height are close enough to be comparable, further supporting the idea that energy is conserved.
+This experiment investigates energy conservation in spring-like popper toys. A popper was compressed and released to obtain its maximum height, its velocity right after hitting the maximum height, and its velocity upon release for five trials. The kinetic energy equation and the potential energy equation were evaluated with the obtained values, where the average of the yielded kinetic energy and potential energy values, \qty{0.06894}{\joule} and \qty{0.07922}{\joule}, respectively, were compared and found to be approximately equal. The elastic potential energy stored in the popper before launch was \qty{0.257 }{\joule}, further supporting the idea that energy is conserved. A paired $t$-test comparing the average kinetic energy at launch and the average gravitational potential energy at maximum height for a popper for five trials yielded $p = 0.424$, revealing no statistically significant difference between the kinetic energy at launch and the potential energy at the popper’s highest point. This means that the kinetic energy at launch and the potential energy at maximum height are close enough to be comparable, further supporting the idea that energy is conserved.
 \end{abstract}
 
 % For revtex format this will not print on the article page but will be used in setting 
@@ -81,33 +81,34 @@ This experiment investigates energy conservation in spring-like popper toys. A p
 %The current column width is \the\columnwidth
 
 \section{Introduction}
-Kinetic energy (KE) is the energy inside a moving object that makes it move, and can be calculated by the kinetic energy equation, which relates mass m and velocity v to produce the amount of kinetic energy K in a system[1]:
-
-%would like this equation to be K = 1/2mv^2  as Eq. (1)
+Kinetic energy ($KE$) is the energy inside a moving object that makes it move, and can be calculated by the kinetic energy equation \cite{tipler}:
 \begin{equation}
-\sum \vec{F} = m \vec{a}.
-\label{eq:fma} % example label for use with cleveref
+KE = \frac{1}{2} m v^2,
+\label{eq:1}
 \end{equation}
+where $m$ is mass and $v$ is velocity $v$.
 
-Gravitational potential energy (GPE) is the energy stored inside an object at rest, and is based on the object's vertical position away from the ground. It can be calculated by the gravitational potential energy equation, which relates the initial gravitational potential energy U0 , mass m, gravitational constant g = 9.8 m/s2, and vertical position y to produce the amount of potential energy U in a system[1]:
-
-%would like this equation to be U = U0 + mgy as Eq. (2)
+Gravitational potential energy (GPE) is given by \cite{tipler}:
 \begin{equation}
-\sum \vec{F} = m \vec{a}.
-\label{eq:fma} % example label for use with cleveref
+GPE = m g h,
+\label{eq:2}
 \end{equation}
+where $m$ is mass, $h$ is height above some reference height, and $g=\qty{9.8}{\meter\per\second\squared}$ is the acceleration of gravity. 
 
-It can be hypothesized that energy is conserved in a frictionless environment, meaning that the total energy of the system should remain constant. Friction was neglected to simplify the experiment, as it has no significantly large impact on the data. The kinetic energy of the system just as the popper left the ground, and the gravitational potential energy of the system at the popper's maximum height were calculated with Eq. (1) and Eq. (2), respectively, where the system consists of the popper.
+It can be hypothesized that energy is conserved in a frictionless environment, meaning that the total energy of the system should remain constant. Friction was neglected to simplify the experiment, as it has no significantly large impact on the data. The kinetic energy of the system just as the popper left the ground, and the gravitational potential energy of the system at the popper's maximum height were calculated with \cref{eq:1,eq:2}, respectively, where the system consists of the popper.
 
 The null hypothesis and alternative hypothesis are listed below:
-Null Hypothesis: KE = GPE
-Alternative Hypothesis: KE ≠ GPE
+\begin{align}
+H_0: KE &= GPE, \\
+H_1: KE \neq GPE.
+\end{align}
+$H_0$ states that energy is conserved during the popper’s motion, meaning the kinetic energy at launch is equal to the gravitational potential energy at maximum height. This would imply that there is no significant difference between the kinetic energy at launch and the potential energy at the popper’s maximum height. Alternatively, $H_1$ states that energy is not conserved during the popper’s motion, meaning the kinetic energy at launch is not equal to the gravitational potential energy at maximum height.
 
-The null hypothesis states that energy is conserved during the popper’s motion, meaning the kinetic energy at launch is equal to the gravitational potential energy at maximum height. This would imply that there is no significant difference between the kinetic energy at launch and the potential energy at the popper’s maximum height.
+An app called FizziQ was used to compute the popper’s velocity as it left the initial position $y = 0$ for \cref{eq:1} based on video data \cite{fizziq}. The initial gravitational potential energy $U_0$ was defined as zero for all calculations to represent the absence of energy in the system at rest. Since the conservation of energy indicates that there can only be as much kinetic energy as there was potential energy, it was deduced that, if these two values are equal when friction is negligible, energy is conserved.
 
-The alternative hypothesis states that energy is not conserved during the popper’s motion, meaning the kinetic energy at launch is not equal to the gravitational potential energy at maximum height.
 
-An app called FizziQ was used to compute the popper’s velocity as it left the initial position y = 0 for Eq. (1) based on video data[2]. The initial gravitational potential energy U0 was defined as 0 for all calculations to represent the absence of energy in the system at rest. Since the conservation of energy indicates that there can only be as much kinetic energy as there was potential energy, it was deduced that, if these two values are equal when friction is negligible, energy is conserved.
+
+
 
 
 
@@ -140,6 +141,11 @@ The popper (Liberty Imports “Jumping Gens” poppers, Florham Park, NJ) is a y
 \end{figure}
 
 To measure the exact force in the popper before release, a scale was placed under the popper to measure the weight in grams, and set to 0 to avoid counting the popper's weight, as shown in FIGURE 2. The scissor jack was placed next to the scale so that the platform sat on the popper's foam head. The scissor jack was used to adjust to a specific compression height for each trial, allowing for more exact calculations of force measurements. Additionally, the use of this tool avoided confounding variables like inconsistent human force or human error when handling the popper. With this setup, the scissor jack's platform was lowered, thereby compressing the popper to find more precise measurements of force without human error, shown in FIGURE 3. The weight was later converted to Newtons for easier calculations.
+
+
+
+
+
 
 
         
@@ -194,6 +200,12 @@ $x$ & $\bar{x}$ \\
 \end{table}
 
 With FIGURE 5, the kinetic energy of the system at the moment of release and the potential energy of the system at the popper’s maximum height were compared. It is important to note that, in FIGURE 5, the fourth trial shows a significantly lower velocity than the others, at 2.94 m/s. This is most likely due to human error, inconsistent release of the popper, or inaccuracy with measurements. This outlier contributed to the overall decrease in kinetic energy and the lower t-statistic.
+
+
+
+
+
+
     
     
 \section{Discussion}
@@ -257,6 +269,11 @@ Friction was neglected throughout this experiment, but it would still affect the
 This experiment provides experimental confirmation that energy is conserved when friction is negligible. Although limited by human and experimental error, a general idea for energy conservation was established.
 
     
+
+
+
+
+
     
 \section{Acknowledgements}
 JB assisted with data collection, statistical analysis, creation of visual aids, and documentation and organization of the results and discussion. JK assisted with data collection, statistical analysis, and documentation of the results and discussion. SN assisted with data collection and statistical analysis, and worked on the abstract, results, and discussion. KS assisted with data collection, documentation, and organization of the methods and materials, results, and discussion.
@@ -270,7 +287,7 @@ JB assisted with data collection, statistical analysis, creation of visual aids,
 
 
 %these are all our sources that happen to be included here
-\bibliography{example.bib}
+\bibliography{su.bib}
 %References
 %[1] P.A. Tipler and G. Mosca. Physics for Scientists and Engineers, 5th ed. (W H Freeman and Company, New York, 2004).
 
