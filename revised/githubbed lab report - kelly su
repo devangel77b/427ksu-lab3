@@ -1,0 +1,282 @@
+%is this right?
+
+%\documentclass[reprint,amsmath,amssymb,aps,twoside]{revtex4-2} % for editor use only
+
+% For initial submission use these lines
+\documentclass[amsmath,amssymb,aps,endfloats,linenumbers]{revtex4-2}
+
+
+
+% DO NOT CHANGE THINGS BELOW HERE
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{dcolumn}
+\usepackage{bm}
+\usepackage{siunitx}
+%\usepackage{tikz,pgfplots}
+\sisetup{separate-uncertainty=true, multi-part-units=single}
+\usepackage[colorlinks,allcolors=blue]{hyperref}
+\usepackage{cleveref}
+\crefname{equation}{}{}
+\crefname{figure}{Fig.}{Figs.}
+\crefname{table}{Table}{Tables}
+\usepackage{svg}
+\svgpath{{./figures}}
+
+
+
+
+% set PDF metadata
+% AUTHORS EDIT THIS PART
+\hypersetup{%
+pdftitle={Energy is Conserved in Spring-like Poppers}, % full title here
+pdfauthor={Kelly Su, Julia Bawar, Julia Khabinskiy, and Sejal Nagrani}, % full author list here
+}
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RE,RO]{J S\&E \textbf{2}, xx--xx (2026)} % FOR EDITOR ONLY
+\fancyhead[LO]{Lennon \emph{et al}} % if many authors
+%\fancyhead[LO]{John and Dee} % if short enough to list all authors
+\fancyhead[LE]{She loves you, yeah, yeah, yeah} % full or short title depending on what fits
+%\fancyhead[LE}{Several species of small furry animals gathered together in a cave and grooving with a pict} % might be too long
+%\fancyhead[LE]{Several species grooving} % might be a short version of the title that fits
+\fancyfoot[C]{\thepage}
+\fancypagestyle{mytitlepage}{
+\fancyhf{}
+\fancyhead[C]{Journal of Science \& Engineering \textbf{2}, xx--xx (2026)} % FOR EDITOR ONLY
+\fancyfoot[C]{\thepage}
+}
+
+
+\begin{document}
+%\setcounter{page}{67} % FOR EDITOR USE ONLY
+%\linenumbers % FOR EDITOR USE ONLY
+
+% AUTHORS EDIT THIS PART
+\title{Energy is Conserved in Spring-like Poppers}
+\author{Kelly Su}
+\altaffiliation{Manalapan High School} % use for non S&E authors
+\author{Julia Bawar}
+\author{Julia Khabinskiy}
+\author{Sejal Nagrani}
+\email{Contact author: 427ksu@frhsd.com} % use FRHSD address
+% For S&E authors
+\affiliation{Science \& Engineering Magnet Program, \href{https://manalapan.frhsd.com/}{Manalapan High School}, Englishtown, NJ 07726 USA}
+\date{\today}
+
+
+% AUTHORS PUT YOUR MANUSCRIPT IN BELOW HERE
+\begin{abstract}
+This experiment investigates energy conservation in spring-like popper toys. A popper was compressed and released to obtain its maximum height, its velocity right after hitting the maximum height, and its velocity upon release for five trials. The kinetic energy equation and the potential energy equation were evaluated with the obtained values, where the average of the yielded kinetic energy and potential energy values, 0.06894 J and 0.07922 J, respectively, were compared and found to be approximately equal. The elastic potential energy stored in the popper before launch was 0.257 J, further supporting the idea that energy is conserved. A paired t-test comparing the average kinetic energy at launch and the average gravitational potential energy at maximum height for a popper for five trials yielded a p-value of p = 0.424 > α = 0.05, revealing no statistically significant difference between the kinetic energy at launch and the potential energy at the popper’s highest point. This means that the kinetic energy at launch and the potential energy at maximum height are close enough to be comparable, further supporting the idea that energy is conserved.
+\end{abstract}
+
+% For revtex format this will not print on the article page but will be used in setting 
+% the journal metadata so include keywords. Lowercase unless they are acronyms or proper nouns
+% and pick keywords that will actually help people find your work properly. 
+\keywords{kinematics, pop, time series}
+
+\maketitle\thispagestyle{mytitlepage}
+
+%The current column width is \the\columnwidth
+
+\section{Introduction}
+Kinetic energy (KE) is the energy inside a moving object that makes it move, and can be calculated by the kinetic energy equation, which relates mass m and velocity v to produce the amount of kinetic energy K in a system[1]:
+
+%would like this equation to be K = 1/2mv^2  as Eq. (1)
+\begin{equation}
+\sum \vec{F} = m \vec{a}.
+\label{eq:fma} % example label for use with cleveref
+\end{equation}
+
+Gravitational potential energy (GPE) is the energy stored inside an object at rest, and is based on the object's vertical position away from the ground. It can be calculated by the gravitational potential energy equation, which relates the initial gravitational potential energy U0 , mass m, gravitational constant g = 9.8 m/s2, and vertical position y to produce the amount of potential energy U in a system[1]:
+
+%would like this equation to be U = U0 + mgy as Eq. (2)
+\begin{equation}
+\sum \vec{F} = m \vec{a}.
+\label{eq:fma} % example label for use with cleveref
+\end{equation}
+
+It can be hypothesized that energy is conserved in a frictionless environment, meaning that the total energy of the system should remain constant. Friction was neglected to simplify the experiment, as it has no significantly large impact on the data. The kinetic energy of the system just as the popper left the ground, and the gravitational potential energy of the system at the popper's maximum height were calculated with Eq. (1) and Eq. (2), respectively, where the system consists of the popper.
+
+The null hypothesis and alternative hypothesis are listed below:
+Null Hypothesis: KE = GPE
+Alternative Hypothesis: KE ≠ GPE
+
+The null hypothesis states that energy is conserved during the popper’s motion, meaning the kinetic energy at launch is equal to the gravitational potential energy at maximum height. This would imply that there is no significant difference between the kinetic energy at launch and the potential energy at the popper’s maximum height.
+
+The alternative hypothesis states that energy is not conserved during the popper’s motion, meaning the kinetic energy at launch is not equal to the gravitational potential energy at maximum height.
+
+An app called FizziQ was used to compute the popper’s velocity as it left the initial position y = 0 for Eq. (1) based on video data[2]. The initial gravitational potential energy U0 was defined as 0 for all calculations to represent the absence of energy in the system at rest. Since the conservation of energy indicates that there can only be as much kinetic energy as there was potential energy, it was deduced that, if these two values are equal when friction is negligible, energy is conserved.
+
+
+
+\section{Methods and materials}
+
+%figure 1 please
+\begin{figure}
+\begin{center}
+%Image file would go here 
+% \includegraphics{figures/fig1.png}
+\includegraphics{figures/newfig1.pdf}
+% \includesvg{figures/fig2.svg}
+\end{center}
+\caption{Setup for the experiment depicting the measuring device and the popper. It is not to-scale.}
+\label{fig:foo}
+\end{figure}
+
+The popper (Liberty Imports “Jumping Gens” poppers, Florham Park, NJ) is a yellow, spring-like toy that consists of a foam head with a conically structured netting attached to it, shown in FIGURE 1, with a height of 0.085 m and a weight of 0.0055 kg. The measuring device consisted of two meter sticks that were taped together so that the bottom stick would end at the 0.5 m mark of the top stick. This assembly was propped up by a group member's hands, with the edge of the ruler staying flat on the ground. Then, a popper was pinched between another group member's thumb and index finger at the side of the foam head to compress it toward y = 0, the popper's snap-through point. To release the popper, the thumb and index finger were simultaneously removed from the foam head, allowing the popper to spring upwards and reach its maximum height before moving downwards. For a total of five trials, the same person released each popper with this method for each trial to avoid confounding variables. The popper's maximum height from each trial was documented through visual observation and later, more precisely observed in videos of each trial taken at 60 frames per second with an iPhone 15. These videos were then processed through FizziQ, where each frame was handpicked, and the popper's position was indicated with a point and positioned by a group member[2]. The experiment was conducted inside a classroom in a secluded area with the windows closed, unaffected by external factors and elements, such as other individuals and wind.
+
+%figure 2 please
+\begin{figure}
+\begin{center}
+%Image file would go here 
+% \includegraphics{figures/fig1.png}
+\includegraphics{figures/newfig1.pdf}
+% \includesvg{figures/fig2.svg}
+\end{center}
+\caption{Setup for the scissor jack portion of the experiment.}
+\label{fig:foo}
+\end{figure}
+
+To measure the exact force in the popper before release, a scale was placed under the popper to measure the weight in grams, and set to 0 to avoid counting the popper's weight, as shown in FIGURE 2. The scissor jack was placed next to the scale so that the platform sat on the popper's foam head. The scissor jack was used to adjust to a specific compression height for each trial, allowing for more exact calculations of force measurements. Additionally, the use of this tool avoided confounding variables like inconsistent human force or human error when handling the popper. With this setup, the scissor jack's platform was lowered, thereby compressing the popper to find more precise measurements of force without human error, shown in FIGURE 3. The weight was later converted to Newtons for easier calculations.
+
+
+        
+\section{Results}
+
+%figure 3 please
+\begin{figure}
+\begin{center}
+%Image file would go here 
+% \includegraphics{figures/fig1.png}
+\includegraphics{figures/newfig1.pdf}
+% \includesvg{figures/fig2.svg}
+\end{center}
+\caption{Graph showing the force in Newtons generated at different compression distances in meters. Between 0.03 m and 0.05 m shows the popper’s snap-through. The respective elastic potential energies at 0.03 m, 0.05 m, and 0.06 m are shown as areas under the curve.}
+\label{fig:foo}
+\end{figure}
+
+FIGURE 3, created with the Google Sheets software represents the spring force generated by different compression distances. From this, the elastic potential energy stored in the popper before release was calculated as the area under the curve. At the snap-through point, a distance of 0.05 m compressed, the area under the curve was approximately 0.257 J, according to FIGURE 3.
+
+%figure 4 please
+\begin{table}
+\begin{center}
+\begin{ruledtabular}
+\begin{tabular}{cc}
+$x$ & $\bar{x}$ \\
+\colrule
+0 & 1 \\ 
+1 & 0 \\
+\end{tabular}
+\end{ruledtabular}
+\end{center}
+\caption{One of the tables created by FizziQ, based on a video of the first trial with selected values to be shown, such as the vertical position (height) and the velocity[2]. The maximum height, velocity upon release, and velocity right after hitting the maximum height are marked with a star. The cells without values are intentionally left blank.}
+\label{tab:bar}
+\end{table}
+
+FIGURE 4 represents an example of a table created by FizziQ based on a trial video[2]. A table was created by the app to find the maximum height and velocity upon release for each trial, which has been compiled into a separate table that contains these values, shown in FIGURE 5.
+
+%figure 5 please
+\begin{table}
+\begin{center}
+\begin{ruledtabular}
+\begin{tabular}{cc}
+$x$ & $\bar{x}$ \\
+\colrule
+0 & 1 \\ 
+1 & 0 \\
+\end{tabular}
+\end{ruledtabular}
+\end{center}
+\caption{Table representing the maximum height, velocity upon release, and velocity right after hitting maximum height from each trial.}
+\label{tab:bar}
+\end{table}
+
+With FIGURE 5, the kinetic energy of the system at the moment of release and the potential energy of the system at the popper’s maximum height were compared. It is important to note that, in FIGURE 5, the fourth trial shows a significantly lower velocity than the others, at 2.94 m/s. This is most likely due to human error, inconsistent release of the popper, or inaccuracy with measurements. This outlier contributed to the overall decrease in kinetic energy and the lower t-statistic.
+    
+    
+\section{Discussion}
+
+To find the velocity and maximum height with the FizziQ app, each video of each trial was input into the software[2]. After setting the initial position y = 0 m and time t = 0 s, appropriate times during the video were selected that allowed for accurate pinpointing of the position of the popper at that time to create FIGURE 4.
+
+%figure 6 please
+\begin{table}
+\begin{center}
+\begin{ruledtabular}
+\begin{tabular}{cc}
+$x$ & $\bar{x}$ \\
+\colrule
+0 & 1 \\ 
+1 & 0 \\
+\end{tabular}
+\end{ruledtabular}
+\end{center}
+\caption{Kinetic energy upon release, kinetic energy right after hitting maximum height, potential energy at maximum height, and the difference between.}
+\label{tab:bar}
+\end{table}
+    
+FIGURE 6 was produced after inputting each appropriate velocity into Eq. (1) and each maximum height into Eq. (2). All values were chosen to be as close as possible to the initial launch velocity, maximum height, and immediate velocity coming down from the peak. As shown, the difference between KE and PE was slightly higher than anticipated, with an average difference of about 0.020 J. The data showed a similarity of approximately ±0.1 between the initial kinetic energy and potential energy at the peak of the launch, averaged across the five trials. This consistency demonstrates that energy was conserved, although any discrepancies may be attributed to limitations of the FizziQ app and human error when releasing the poppers[2]. A significant limitation was that it could not accurately capture the exact moment when the popper began its upward motion, instead registering a few milliseconds later.
+
+%figure 7 please
+\begin{table}
+\begin{center}
+\begin{ruledtabular}
+\begin{tabular}{cc}
+$x$ & $\bar{x}$ \\
+\colrule
+0 & 1 \\ 
+1 & 0 \\
+\end{tabular}
+\end{ruledtabular}
+\end{center}
+\caption{Average initial kinetic energy, average initial potential energy, their respective standard deviations, the t-statistic, and the p-value.}
+\label{tab:bar}
+\end{table}
+
+%figure 8 please
+\begin{figure}
+\begin{center}
+%Image file would go here 
+% \includegraphics{figures/fig1.png}
+\includegraphics{figures/newfig1.pdf}
+% \includesvg{figures/fig2.svg}
+\end{center}
+\caption{A bar graph comparing the two primary energy states with standard deviation error bars. Note that KE’s error bar length is much larger than GPE’s due to Trial 4 (an outlier), which had a much lower velocity of 2.94 m/s, thus significantly increasing the standard deviation for the KE measurements.}
+\label{fig:foo}
+\end{figure}
+
+%the percentage in the following paragraph makes the text following it a comment; i'd like for it not to do that
+
+A paired t-test was performed to compare the kinetic energy at launch and the potential energy at the popper’s maximum height with the values in FIGURE 7. As shown, the analysis yielded a t-statistic of t = −0.89 and a two-tailed p-value of p = 0.424. Since p = 0.424 > α = 0.05, there was no statistically significant difference between the kinetic energy at launch and the potential energy at the popper’s highest point. This means that energy is conserved within the popper’s flight. Furthermore, the calculated elastic potential energy was 0.257 J, which appears far from the average kinetic energy and potential energy values, but a significant amount of energy is lost upon release, especially due to friction between the popper’s conical netting. Assuming that about 73.2% of the elastic potential energy was lost to friction, heat, and sound, the rest of the elastic potential energy was converted to kinetic energy, which forced the popper upwards and yielded the first two values in FIGURE 7. It is important to note that any difference between kinetic energy at initial launch and gravitational potential energy at the maximum point is due to experimental error, not to a significant energy difference within the context of the experiment.
+
+Furthermore, the value of KEmax nears 0 in each trial, implying that the popper’s kinetic energy at launch was near or completely depleted by the time the popper reached its maximum height. This further supports the idea that the kinetic energy at launch was converted into other energy types, gravitational potential energy being the most prominent, as shown by the close values of KEr and GPE.
+
+Friction was neglected throughout this experiment, but it would still affect the popper as it traveled through the air, contributing to experimental error. In addition to environmental factors, many errors can also be attributed to human error, as visual observation and 60-frame-per-second videos are not always sufficient in accurately describing exact points, and manual compression and release were likely somewhat biased by the human releaser’s reaction time. Future experiments could be improved by performing the experiment in a vacuum, where air resistance is actually negligible, measuring data by more accurate means, such as with high-speed cameras, and using more precise methods of compression and release.
+
+This experiment provides experimental confirmation that energy is conserved when friction is negligible. Although limited by human and experimental error, a general idea for energy conservation was established.
+
+    
+    
+\section{Acknowledgements}
+JB assisted with data collection, statistical analysis, creation of visual aids, and documentation and organization of the results and discussion. JK assisted with data collection, statistical analysis, and documentation of the results and discussion. SN assisted with data collection and statistical analysis, and worked on the abstract, results, and discussion. KS assisted with data collection, documentation, and organization of the methods and materials, results, and discussion.
+
+
+
+% References – Do not spend too much time trying to perfectly format per MLA or whatever because journals often have their own preferred formats; as long as you have author, title, journal, year, volume, page number it will be findable. Peer reviewed journals or published work only; Food Girl’s Blog is not a peer reviewed journal; Wikipedia is not a peer reviewed journal; Webster’s Dictionary is not necessary in a scientific journal article. If I find fake references your paper will be rejected. 
+
+
+
+
+
+%these are all our sources that happen to be included here
+\bibliography{example.bib}
+%References
+%[1] P.A. Tipler and G. Mosca. Physics for Scientists and Engineers, 5th ed. (W H Freeman and Company, New York, 2004).
+
+%Chazot, Christophe. FizziQ. 5.0.4, Trapèze. Digital, 2025, Apple App Store.
+
+
+\end{document}
