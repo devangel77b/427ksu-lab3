@@ -1,7 +1,7 @@
-%\documentclass[reprint,amsmath,amssymb,aps,twoside]{revtex4-2} % for editor use only
+\documentclass[reprint,amsmath,amssymb,aps,twoside]{revtex4-2} % for editor use only
 
 % For initial submission use these lines
-\documentclass[amsmath,amssymb,aps,endfloats,linenumbers]{revtex4-2}
+%\documentclass[amsmath,amssymb,aps,endfloats,linenumbers]{revtex4-2}
 
 
 
@@ -117,30 +117,24 @@ An app called FizziQ was used to compute the popper’s velocity as it left the 
 %figure 1 please
 \begin{figure}
 \begin{center}
-%Image file would go here 
-% \includegraphics{figures/fig1.png}
-\includegraphics{figures/newfig1.pdf}
-% \includesvg{figures/fig2.svg}
+\includegraphics[width=\columnwidth]{figures/fig1.png}
 \end{center}
 \caption{Setup for the experiment depicting the measuring device and the popper. It is not to-scale.}
-\label{fig:foo}
+\label{fig:1}
 \end{figure}
 
-The popper (Liberty Imports “Jumping Gens” poppers, Florham Park, NJ) is a yellow, spring-like toy that consists of a foam head with a conically structured netting attached to it, shown in FIGURE 1, with a height of 0.085 m and a weight of 0.0055 kg. The measuring device consisted of two meter sticks that were taped together so that the bottom stick would end at the 0.5 m mark of the top stick. This assembly was propped up by a group member's hands, with the edge of the ruler staying flat on the ground. Then, a popper was pinched between another group member's thumb and index finger at the side of the foam head to compress it toward y = 0, the popper's snap-through point. To release the popper, the thumb and index finger were simultaneously removed from the foam head, allowing the popper to spring upwards and reach its maximum height before moving downwards. For a total of five trials, the same person released each popper with this method for each trial to avoid confounding variables. The popper's maximum height from each trial was documented through visual observation and later, more precisely observed in videos of each trial taken at 60 frames per second with an iPhone 15. These videos were then processed through FizziQ, where each frame was handpicked, and the popper's position was indicated with a point and positioned by a group member[2]. The experiment was conducted inside a classroom in a secluded area with the windows closed, unaffected by external factors and elements, such as other individuals and wind.
+The popper (Liberty Imports ``Jumping Gens''; Florham Park, NJ) is a yellow, spring-like toy that consists of a foam head with a conically structured netting attached to it, shown in \cref{fig:1}, with a height of \qty{0.085}{\meter} and a mass of \qty{0.0055}{\kilo\gram}. The measuring device consisted of two meter sticks that were taped together so that the bottom stick would end at the \qty{0.50}{\meter} mark of the top stick. This assembly was propped up by a group member's hands, with the edge of the ruler staying flat on the ground. Then, a popper was pinched between another group member's thumb and index finger at the side of the foam head to compress it toward $y = 0$, the popper's snap-through point. To release the popper, the thumb and index finger were simultaneously removed from the foam head, allowing the popper to spring upwards and reach its maximum height before moving downwards. For a total of five trials, the same person released each popper with this method for each trial to avoid confounding variables. The popper's maximum height from each trial was documented through visual observation and later, more precisely observed in videos of each trial taken at \qty{60}{frame\per\second} with an iPhone 15 (Apple, Inc; Cupertino, CA). These videos were then processed through FizziQ, where each frame was handpicked, and the popper's position was indicated with a point and positioned by a group member \cite{fizziq}. The experiment was conducted inside a classroom in a secluded area with the windows closed, unaffected by external factors and elements, such as other individuals and wind.
 
 %figure 2 please
 \begin{figure}
 \begin{center}
-%Image file would go here 
-% \includegraphics{figures/fig1.png}
-\includegraphics{figures/newfig1.pdf}
-% \includesvg{figures/fig2.svg}
+\includegraphics[width=\columnwidth]{figures/fig2.png}
 \end{center}
 \caption{Setup for the scissor jack portion of the experiment.}
-\label{fig:foo}
+\label{fig:2}
 \end{figure}
 
-To measure the exact force in the popper before release, a scale was placed under the popper to measure the weight in grams, and set to 0 to avoid counting the popper's weight, as shown in FIGURE 2. The scissor jack was placed next to the scale so that the platform sat on the popper's foam head. The scissor jack was used to adjust to a specific compression height for each trial, allowing for more exact calculations of force measurements. Additionally, the use of this tool avoided confounding variables like inconsistent human force or human error when handling the popper. With this setup, the scissor jack's platform was lowered, thereby compressing the popper to find more precise measurements of force without human error, shown in FIGURE 3. The weight was later converted to Newtons for easier calculations.
+To measure the exact force in the popper before release, a scale was placed under the popper to measure the mass in grams, and zeroed to avoid counting the popper's deadweight, as shown in \cref{fig:2}. The scissor jack was placed next to the scale so that the platform sat on the popper's foam head. The scissor jack was used to adjust to a specific compression height for each trial, allowing for more exact calculations of force measurements. Additionally, the use of this tool avoided confounding variables like inconsistent human force or human error when handling the popper. With this setup, the scissor jack's platform was lowered, thereby compressing the popper to find more precise measurements of force without human error, shown in \cref{fig:3}. The scale reading was later converted to \unit{newton} using $F=mg$, with $g=\qty{9.8}{\meter\per\second\squared}$.
 
 
 
@@ -154,19 +148,18 @@ To measure the exact force in the popper before release, a scale was placed unde
 %figure 3 please
 \begin{figure}
 \begin{center}
-%Image file would go here 
-% \includegraphics{figures/fig1.png}
-\includegraphics{figures/newfig1.pdf}
-% \includesvg{figures/fig2.svg}
+\includegraphics[width=\columnwidth]{figures/fig3.png}
 \end{center}
 \caption{Graph showing the force in Newtons generated at different compression distances in meters. Between 0.03 m and 0.05 m shows the popper’s snap-through. The respective elastic potential energies at 0.03 m, 0.05 m, and 0.06 m are shown as areas under the curve.}
-\label{fig:foo}
+\label{fig:3}
 \end{figure}
 
-FIGURE 3, created with the Google Sheets software represents the spring force generated by different compression distances. From this, the elastic potential energy stored in the popper before release was calculated as the area under the curve. At the snap-through point, a distance of 0.05 m compressed, the area under the curve was approximately 0.257 J, according to FIGURE 3.
+\Cref{fig:3}, created with the Google Sheets software represents the spring force generated by different compression distances. From this, the elastic potential energy stored in the popper before release was calculated as the area under the curve. At the snap-through point, a distance of \qty{0.05}{\meter} compressed, the area under the curve was approximately \qty{0.257}{\joule}.
 
 %figure 4 please
 \begin{table}
+\caption{One of the tables created by FizziQ, based on a video of the first trial with selected values to be shown, such as the vertical position (height) and the velocity \cite{fizziq}. The maximum height, velocity upon release, and velocity right after hitting the maximum height are marked with a star. The cells without values are intentionally left blank.}
+\label{tab:4}
 \begin{center}
 \begin{ruledtabular}
 \begin{tabular}{cc}
@@ -177,14 +170,14 @@ $x$ & $\bar{x}$ \\
 \end{tabular}
 \end{ruledtabular}
 \end{center}
-\caption{One of the tables created by FizziQ, based on a video of the first trial with selected values to be shown, such as the vertical position (height) and the velocity[2]. The maximum height, velocity upon release, and velocity right after hitting the maximum height are marked with a star. The cells without values are intentionally left blank.}
-\label{tab:bar}
 \end{table}
 
-FIGURE 4 represents an example of a table created by FizziQ based on a trial video[2]. A table was created by the app to find the maximum height and velocity upon release for each trial, which has been compiled into a separate table that contains these values, shown in FIGURE 5.
+\Cref{tab:4} represents an example of a table created by FizziQ based on a trial video \cite{fizziq}. A table was created by the app to find the maximum height and velocity upon release for each trial, which has been compiled into a separate table that contains these values, shown in \cref{tab:5}.
 
 %figure 5 please
 \begin{table}
+\caption{Table representing the maximum height, velocity upon release, and velocity right after hitting maximum height from each trial.}
+\label{tab:5}
 \begin{center}
 \begin{ruledtabular}
 \begin{tabular}{cc}
@@ -195,11 +188,11 @@ $x$ & $\bar{x}$ \\
 \end{tabular}
 \end{ruledtabular}
 \end{center}
-\caption{Table representing the maximum height, velocity upon release, and velocity right after hitting maximum height from each trial.}
-\label{tab:bar}
 \end{table}
 
-With FIGURE 5, the kinetic energy of the system at the moment of release and the potential energy of the system at the popper’s maximum height were compared. It is important to note that, in FIGURE 5, the fourth trial shows a significantly lower velocity than the others, at 2.94 m/s. This is most likely due to human error, inconsistent release of the popper, or inaccuracy with measurements. This outlier contributed to the overall decrease in kinetic energy and the lower t-statistic.
+With \cref{tab:5}, the kinetic energy of the system at the moment of release and the potential energy of the system at the popper’s maximum height were compared. It is important to note that, in \cref{tab:5}, the fourth trial shows a significantly lower velocity than the others, at \qty{2.94}{\meter\per\second}. This is most likely due to human error, inconsistent release of the popper, or inaccuracy with measurements. This outlier contributed to the overall decrease in kinetic energy and the lower $t$-statistic.
+
+
 
 
 
@@ -210,10 +203,12 @@ With FIGURE 5, the kinetic energy of the system at the moment of release and the
     
 \section{Discussion}
 
-To find the velocity and maximum height with the FizziQ app, each video of each trial was input into the software[2]. After setting the initial position y = 0 m and time t = 0 s, appropriate times during the video were selected that allowed for accurate pinpointing of the position of the popper at that time to create FIGURE 4.
+To find the velocity and maximum height with the FizziQ app, each video of each trial was input into the software \cite{fizziq}. After setting the initial position $y = \qty{0}{\meter}$ and time $t = \qty{0}{\second}$, appropriate times during the video were selected that allowed for accurate pinpointing of the position of the popper at that time to create \cref{tab:4}.
 
 %figure 6 please
 \begin{table}
+\caption{Kinetic energy upon release, kinetic energy right after hitting maximum height, potential energy at maximum height, and the difference between.}
+\label{tab:6}
 \begin{center}
 \begin{ruledtabular}
 \begin{tabular}{cc}
@@ -224,14 +219,14 @@ $x$ & $\bar{x}$ \\
 \end{tabular}
 \end{ruledtabular}
 \end{center}
-\caption{Kinetic energy upon release, kinetic energy right after hitting maximum height, potential energy at maximum height, and the difference between.}
-\label{tab:bar}
 \end{table}
     
-FIGURE 6 was produced after inputting each appropriate velocity into Eq. (1) and each maximum height into Eq. (2). All values were chosen to be as close as possible to the initial launch velocity, maximum height, and immediate velocity coming down from the peak. As shown, the difference between KE and PE was slightly higher than anticipated, with an average difference of about 0.020 J. The data showed a similarity of approximately ±0.1 between the initial kinetic energy and potential energy at the peak of the launch, averaged across the five trials. This consistency demonstrates that energy was conserved, although any discrepancies may be attributed to limitations of the FizziQ app and human error when releasing the poppers[2]. A significant limitation was that it could not accurately capture the exact moment when the popper began its upward motion, instead registering a few milliseconds later.
+\Cref{tab:6} was produced after inputting each appropriate velocity into \cref{eq:1} and each maximum height into \cref{eq:2}. All values were chosen to be as close as possible to the initial launch velocity, maximum height, and immediate velocity coming down from the peak. As shown, the difference between KE and PE was slightly higher than anticipated, with an average difference of about \qty{0.020}{\joule}. The data showed a similarity of approximately \qty{\pm 0.1}{\joule} between the initial kinetic energy and potential energy at the peak of the launch, averaged across the five trials. This consistency demonstrates that energy was conserved, although any discrepancies may be attributed to limitations of the FizziQ app and human error when releasing the poppers \cite{fizziq}. A significant limitation was that it could not accurately capture the exact moment when the popper began its upward motion, instead registering a few milliseconds later.
 
 %figure 7 please
 \begin{table}
+\caption{Average initial kinetic energy, average initial potential energy, their respective standard deviations, the $t$-statistic, and the $p$-value.}
+\label{tab:7}
 \begin{center}
 \begin{ruledtabular}
 \begin{tabular}{cc}
@@ -242,27 +237,20 @@ $x$ & $\bar{x}$ \\
 \end{tabular}
 \end{ruledtabular}
 \end{center}
-\caption{Average initial kinetic energy, average initial potential energy, their respective standard deviations, the t-statistic, and the p-value.}
-\label{tab:bar}
 \end{table}
 
 %figure 8 please
 \begin{figure}
 \begin{center}
-%Image file would go here 
-% \includegraphics{figures/fig1.png}
-\includegraphics{figures/newfig1.pdf}
-% \includesvg{figures/fig2.svg}
+\includegraphics[width=\columnwidth]{figures/fig8.png}
 \end{center}
-\caption{A bar graph comparing the two primary energy states with standard deviation error bars. Note that KE’s error bar length is much larger than GPE’s due to Trial 4 (an outlier), which had a much lower velocity of 2.94 m/s, thus significantly increasing the standard deviation for the KE measurements.}
-\label{fig:foo}
+\caption{A bar graph comparing the two primary energy states with standard deviation error bars. Note that KE’s error bar length is much larger than GPE’s due to Trial 4 (an outlier), which had a much lower velocity of \qty{2.94}{\meter\per\second}, thus significantly increasing the standard deviation for the KE measurements.}
+\label{fig:8}
 \end{figure}
 
-%the percentage in the following paragraph makes the text following it a comment; i'd like for it not to do that
+A paired $t$-test was performed to compare the kinetic energy at launch and the potential energy at the popper’s maximum height with the values in \cref{tab:7}. As shown, the analysis yielded a $t$-statistic of $t$ = -0.89 and a two-tailed $p$-value of $p$ = 0.424. Since $p = 0.424 > \alpha = 0.05$, there was no statistically significant difference between the kinetic energy at launch and the potential energy at the popper’s highest point. This means that energy is conserved within the popper’s flight. Furthermore, the calculated elastic potential energy was \qty{0.257}{\joule}, which appears far from the average kinetic energy and potential energy values, but a significant amount of energy is lost upon release, especially due to friction between the popper’s conical netting. Assuming that about \qty{73.2}{\percent} of the elastic potential energy was lost to friction, heat, and sound, the rest of the elastic potential energy was converted to kinetic energy, which forced the popper upwards and yielded the first two values in \cref{tab:7}. It is important to note that any difference between kinetic energy at initial launch and gravitational potential energy at the maximum point is due to experimental error, not to a significant energy difference within the context of the experiment.
 
-A paired t-test was performed to compare the kinetic energy at launch and the potential energy at the popper’s maximum height with the values in FIGURE 7. As shown, the analysis yielded a t-statistic of t = −0.89 and a two-tailed p-value of p = 0.424. Since p = 0.424 > α = 0.05, there was no statistically significant difference between the kinetic energy at launch and the potential energy at the popper’s highest point. This means that energy is conserved within the popper’s flight. Furthermore, the calculated elastic potential energy was 0.257 J, which appears far from the average kinetic energy and potential energy values, but a significant amount of energy is lost upon release, especially due to friction between the popper’s conical netting. Assuming that about 73.2% of the elastic potential energy was lost to friction, heat, and sound, the rest of the elastic potential energy was converted to kinetic energy, which forced the popper upwards and yielded the first two values in FIGURE 7. It is important to note that any difference between kinetic energy at initial launch and gravitational potential energy at the maximum point is due to experimental error, not to a significant energy difference within the context of the experiment.
-
-Furthermore, the value of KEmax nears 0 in each trial, implying that the popper’s kinetic energy at launch was near or completely depleted by the time the popper reached its maximum height. This further supports the idea that the kinetic energy at launch was converted into other energy types, gravitational potential energy being the most prominent, as shown by the close values of KEr and GPE.
+Furthermore, the value of $KE_{max}$ nears 0 in each trial, implying that the popper’s kinetic energy at launch was near or completely depleted by the time the popper reached its maximum height. This further supports the idea that the kinetic energy at launch was converted into other energy types, gravitational potential energy being the most prominent, as shown by the close values of $KE_r$ and $GPE$.
 
 Friction was neglected throughout this experiment, but it would still affect the popper as it traveled through the air, contributing to experimental error. In addition to environmental factors, many errors can also be attributed to human error, as visual observation and 60-frame-per-second videos are not always sufficient in accurately describing exact points, and manual compression and release were likely somewhat biased by the human releaser’s reaction time. Future experiments could be improved by performing the experiment in a vacuum, where air resistance is actually negligible, measuring data by more accurate means, such as with high-speed cameras, and using more precise methods of compression and release.
 
@@ -277,11 +265,6 @@ This experiment provides experimental confirmation that energy is conserved when
     
 \section{Acknowledgements}
 JB assisted with data collection, statistical analysis, creation of visual aids, and documentation and organization of the results and discussion. JK assisted with data collection, statistical analysis, and documentation of the results and discussion. SN assisted with data collection and statistical analysis, and worked on the abstract, results, and discussion. KS assisted with data collection, documentation, and organization of the methods and materials, results, and discussion.
-
-
-
-% References – Do not spend too much time trying to perfectly format per MLA or whatever because journals often have their own preferred formats; as long as you have author, title, journal, year, volume, page number it will be findable. Peer reviewed journals or published work only; Food Girl’s Blog is not a peer reviewed journal; Wikipedia is not a peer reviewed journal; Webster’s Dictionary is not necessary in a scientific journal article. If I find fake references your paper will be rejected. 
-
 
 
 
