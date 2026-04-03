@@ -33,5 +33,6 @@ fig8 <- ggplot(longer,aes(x=name,y=E,fill=name))+
      scale_x_discrete(limits=c("KE","GPE"),labels=c('KE','GPE'))+
      ylab('\\unit{\\joule}')+
      theme(legend.position="none",
-	axis.title.x=element_blank())
+	axis.title.x=element_blank(),
+	axis.title.y=element_text(margin=margin(t=0,r=4,b=0,l=0)))
 ggsave('fig8.svg',plot=fig8,width=3.4167,height=2,units="in")
