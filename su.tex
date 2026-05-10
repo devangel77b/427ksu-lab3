@@ -20,6 +20,9 @@
 \crefname{table}{Table}{Tables}
 \usepackage{svg}
 \svgpath{{./figures}}
+\makeatletter
+\def\blfootnote{\xdef\@thefnmark{}\@footnotetext}
+\makeatother
 
 
 
@@ -46,7 +49,8 @@ pdfauthor={Kelly Su, Julia Bawar, Julia Khabinskiy, and Sejal Nagrani}, % full a
 \fancyhf{}
 \fancyhead[C]{Journal of Science \& Engineering \textbf{2}, 89--92 (2026)} % FOR EDITOR ONLY
 \fancyfoot[C]{\thepage}
-\fancyfoot[L]{\scriptsize\copyright\ 2026 Journal of Science \& Engineering, \href{https://creativecommons.org/licenses/by-nc/4.0/}{CC-BY-NC 4.0}}
+%\fancyfoot[L]{\scriptsize\copyright\ 2026 Journal of Science \& Engineering, \href{https://creativecommons.org/licenses/by-nc/4.0/}{CC-BY-NC 4.0}}
+\fancyfoot[L]{\scriptsize\copyright\ 2026 J S\&E \href{https://creativecommons.org/licenses/by-nc/4.0/}{CC-BY-NC 4.0}}
 }
 
 
@@ -64,8 +68,9 @@ pdfauthor={Kelly Su, Julia Bawar, Julia Khabinskiy, and Sejal Nagrani}, % full a
 \author{Sejal Nagrani}
 \affiliation{Science \& Engineering Magnet Program, \href{https://manalapan.frhsd.com/}{Manalapan High School}, Englishtown, NJ 07726 USA}
 %\date{\today}
-\date{Received x; revised x; accepted x}
-\published{13 May 2026}
+\received{31 January 2026}
+\accepted[accepted~]{31 March 2026}
+\published[published~]{13 May 2026}
 
 
 % AUTHORS PUT YOUR MANUSCRIPT IN BELOW HERE
@@ -82,6 +87,7 @@ This experiment investigates energy conservation in spring-like popper toys. A p
 \keywords{kinematics, pop, time series}
 
 \maketitle\thispagestyle{mytitlepage}
+\blfootnote{\\\emph{Published by the Journal of Science \& Engineering under the terms of the \href{https://creativecommons.org/licenses/by-nc/4.0/}{Creative Commons Attribution-NonCommercial 4.0 International} license. Further distribution of this work must maintain attribution to the author(s) and the published article's title, journal citation, and DOI.}}
 
 %The current column width is \the\columnwidth
 
@@ -105,7 +111,7 @@ It can be hypothesized that energy is conserved in a frictionless environment, m
 The null hypothesis and alternative hypothesis are listed below:
 \begin{align}
 H_0: KE &= GPE, \\
-H_1: KE \neq GPE.
+H_1: KE &\neq GPE.
 \end{align}
 $H_0$ states that energy is conserved during the popper’s motion, meaning the kinetic energy at launch is equal to the gravitational potential energy at maximum height. This would imply that there is no significant difference between the kinetic energy at launch and the potential energy at the popper’s maximum height. Alternatively, $H_1$ states that energy is not conserved during the popper’s motion, meaning the kinetic energy at launch is not equal to the gravitational potential energy at maximum height.
 
